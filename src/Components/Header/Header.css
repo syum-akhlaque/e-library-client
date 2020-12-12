@@ -1,0 +1,53 @@
+
+#header-bg{
+    background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url('https://i.ibb.co/Kb3Dzwm/library-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 496px;
+    left: 0px;
+    top: 0px;
+    color: #000;
+     z-index: -1;
+  
+    /* https://i.postimg.cc/CLjCD8zZ/headerBg.png */
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+    .white-nav .btn{
+      padding: 5px 15px;
+      /* margin-left: 45px; */
+    }
+    .white-nav{
+      /* margin-left: 40px; */
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: relative;
+   } 
+   
+   .white-nav li{
+      display: inline;
+      /* margin-left: 40px;   */
+    }
+   
+    /* ----------white header css start -----------*/
+  .white-header .logo{
+      height: 50px;
+      margin-right: 100px;
+      
+  }
+    .white-header .white-nav a{
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      font-family: Montserrat;
+      font-style: normal;
+      font-size: 16px;
+    }
+   
+  
+  

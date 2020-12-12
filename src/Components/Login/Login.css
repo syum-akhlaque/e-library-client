@@ -1,0 +1,60 @@
+.login-form {
+    margin: auto;
+    width: 380px;
+    padding: 10px;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 30px 30px;
+  }
+.login-form input{
+    display: block;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 300px;
+}
+.login-form input:focus{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.error{
+    color: red;
+}
+ .login-form :focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.login-form ::placeholder { 
+    color: rgb(65, 60, 60) !important;
+  }
+  .login-form input[type=submit]{
+    background: #F9A51A;
+  }
+.login-form small { 
+  text-decoration: underline;
+  cursor: pointer;
+  color: #F9A51A;
+}
+.login-form img {
+  width: 23px;
+  margin: 5px 19px 5px 0px;
+  cursor: pointer;
+}
+.logo-button {
+  padding: 0px 27px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  box-sizing: border-box;
+  border-radius: 57px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+.table-hr{
+  color: #F9A51A;
+  width:1px;
+  padding: 0 10px;
+  white-space: nowrap
+}
