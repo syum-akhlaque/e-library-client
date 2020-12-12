@@ -24,7 +24,7 @@ const AddBooks = () => {
         formData.append('releaseDate', data.releaseDate||newDate);
         formData.append('activeStatus', true);
 
-        fetch('http://localhost:5000/addBooks', {
+        fetch('https://pure-peak-00823.herokuapp.com/addBooks', {
             method: 'POST',
             body: formData
         })

@@ -12,7 +12,7 @@ const Home = () => {
     const [loggedInUser,setLoggedInUser] = useContext(userContext)
     const history = useHistory();
     useEffect(() => {
-      fetch('http://localhost:5000/allBooksBySearch?search='+search) 
+      fetch('https://pure-peak-00823.herokuapp.com/allBooksBySearch?search='+search) 
           .then(response => response.json())
           .then(data => setBooks(data)); 
     }, [search]);
@@ -30,7 +30,7 @@ const Home = () => {
 
     const processNewRequest = ({bookName, _id, author})=> {  //--------------- after click place request  btn z-----------------   
        if(loggedInUser.email){
-        fetch('http://localhost:5000/addNewBookRequest', { // fetch  for add new books request for specific user
+        fetch('https://pure-peak-00823.herokuapp.com/addNewBookRequest', { // fetch  for add new books request for specific user
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -49,7 +49,7 @@ const Home = () => {
     }
 
     const handleDeleteBooks = (id)=>{
-        fetch('http://localhost:5000/delete/'+id,{ //-----------fetch request for delete 
+        fetch('https://pure-peak-00823.herokuapp.com/delete/'+id,{ //-----------fetch request for delete 
         method: 'DELETE'
       })
     .then(() => {       

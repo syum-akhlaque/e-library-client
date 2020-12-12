@@ -23,7 +23,7 @@ const BooksCards = (props) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatableStatusData)
           }
-        fetch('http://localhost:5000/updateStatus',updateOptions)
+        fetch('https://pure-peak-00823.herokuapp.com/updateStatus',updateOptions)
     }
    
     const handleEditBooks = (id)=>{

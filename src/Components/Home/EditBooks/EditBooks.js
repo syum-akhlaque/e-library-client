@@ -35,7 +35,7 @@ const EditBooks = () => {
         formData.append('genre', data.genre);
         formData.append('releaseDate', data.releaseDate);
 
-        fetch('http://localhost:5000/editBooks', {
+        fetch('https://pure-peak-00823.herokuapp.com/editBooks', {
             method: 'PATCH',
             body: formData
         })

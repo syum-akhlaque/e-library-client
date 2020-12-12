@@ -27,7 +27,7 @@ const Login = () => {
                newUserInfo.email = user.email;
                newUserInfo.error = '';
                setLoggedInUser(newUserInfo);
-               fetch('http://localhost:5000/addNewUser', { // fetch  for add new resistered user
+               fetch('https://pure-peak-00823.herokuapp.com/addNewUser', { // fetch  for add new resistered user
                method: 'POST',
                headers: { 'Content-Type': 'application/json' },
                body: JSON.stringify({ 
@@ -48,7 +48,7 @@ const Login = () => {
 
         if(!newUser && user.email && user.password){ // login case, if not new user 
 
-          fetch('http://localhost:5000/checkUserInfo?email='+user.email) 
+          fetch('https://pure-peak-00823.herokuapp.com/checkUserInfo?email='+user.email) 
           .then(response => response.json())
           .then(data => {
            
@@ -110,6 +110,12 @@ const Login = () => {
                 <small onClick={()=>{setNewUser(!newUser) ;loggedInUser.error="" }}> {!newUser ?  'Create account' :'Login'  } </small> </p> 
 
             </form>  
+
+            <div className= 'text-danger'>
+              To login as admin plese use : <br/>
+              Email: arssyum@gmail.com  <br/>
+              Pass: aaa111
+           </div>
    
         </div>
     );
